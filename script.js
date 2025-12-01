@@ -5,44 +5,44 @@
   const prodottiStarbucks =   [
   {
     "id": 1,
-    "nome": "Caramel Macchiato",
+    "nome": "Espresso Frappuccinos",
     "prezzo": 4.5,
-    "immagine": "https://upload.wikimedia.org/wikipedia/commons/4/45/Caramel_Macchiato.jpg",
+    "immagine": "https://www.starbucks.it/on/demandware.static/-/Library-Sites-StarbucksSharedLibrary/default/dw6ffa8c8c/images/staticPages/menu/Espresso_Frappuccino_Glass_1.jpg",
     "descrizione": "Espresso, latte caldo e vaniglia con topping al caramello."
   },
   {
     "id": 2,
-    "nome": "Java Chip Frappuccino",
+    "nome": "Gingerbread Frappuccinos",
     "prezzo": 5.2,
-    "immagine": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Starbucks_Java_Chip_Frappuccino.jpg",
+    "immagine": "https://www.starbucks.it/on/demandware.static/-/Library-Sites-StarbucksSharedLibrary/default/dw19f1fc32/images/staticPages/menu/Gingerbread_Frappuccino_Glass.jpg",
     "descrizione": "Frappuccino con scaglie di cioccolato e panna montata."
   },
   {
     "id": 3,
-    "nome": "Iced White Chocolate Mocha",
+    "nome": "Java Chip Frappuccinos",
     "prezzo": 4.9,
-    "immagine": "https://upload.wikimedia.org/wikipedia/commons/2/25/Iced_White_Chocolate_Mocha.jpg",
+    "immagine": "https://www.starbucks.it/on/demandware.static/-/Library-Sites-StarbucksSharedLibrary/default/dw4e2e890e/images/staticPages/menu/Java_Chip_Frappuccino_Glass.jpg",
     "descrizione": "Caffè freddo con cioccolato bianco e latte."
   },
   {
     "id": 4,
-    "nome": "Pumpkin Spice Latte",
+    "nome": "Caramel Cream Frappuccinos",
     "prezzo": 4.7,
-    "immagine": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Pumpkin_Spice_Latte.jpg",
+    "immagine": "https://www.starbucks.it/on/demandware.static/-/Library-Sites-StarbucksSharedLibrary/default/dw89b45f0a/images/staticPages/menu/Caramel_Cream_Frappuccino_Glass.jpg",
     "descrizione": "Latte speziato alla zucca con cannella."
   },
   {
     "id": 5,
-    "nome": "Cold Brew Vanilla Sweet Cream",
+    "nome": "Matcha Green Tea Cream Frappuccinos",
     "prezzo": 4.3,
-    "immagine": "https://upload.wikimedia.org/wikipedia/commons/8/88/Cold_Brew_Vanilla_Sweet_Cream.jpg",
+    "immagine": "https://www.starbucks.it/on/demandware.static/-/Library-Sites-StarbucksSharedLibrary/default/dw309d8327/images/staticPages/menu/Matcha_Cream_Frappuccino_Glass.jpg",
     "descrizione": "Cold brew dolce con crema alla vaniglia."
   },
   {
     "id": 6,
-    "nome": "Chocolate Croissant",
+    "nome": "Chai Cream Frappuccinos",
     "prezzo": 2.8,
-    "immagine": "https://upload.wikimedia.org/wikipedia/commons/1/11/Chocolate_Croissant.jpg",
+    "immagine": "https://www.starbucks.it/on/demandware.static/-/Library-Sites-StarbucksSharedLibrary/default/dw1395448d/images/staticPages/menu/Chai_Tea_Cream_Frappuccino_Glass.jpg",
     "descrizione": "Croissant ripieno al cioccolato."
   }
 ] ;
@@ -56,17 +56,17 @@
 
         let img = element.immagine ;
         let nome = element.nome ;
-        let prezzo = element.prezzo ;
-        let descrizione = element.descrizone ;
+        let prezzo = element.prezzo.toFixed(2) ;
+        let descrizione = element.descrizione ;
 
-        const card = `<div class="col-12 col-md-6">
+        const card = `<div class="col-12 col-md-6 col-lg-4">
                     <div class="card">
-                        <img src="${img}" class="card-img-top">
+                        <img src="${img}" class="card-img-top img-fluid">
                         <div class="card-body">
                             <h5 class="card-title">${nome}</h5>
                             <p class="card-text">${descrizione}</p>
                             <p class="card-text"> € ${prezzo}</p>
-                            <a href="#" class="btn btn-primary">Vedi descrizione</a>
+                            <a href="#" class="btn btn-success">Aggiungi alla tua lista</a>
                         </div>
                     </div>
                 </div>`
