@@ -65,8 +65,9 @@
                         <div class="card-body">
                             <h5 class="card-title">${nome}</h5>
                             <p class="card-text">${descrizione}</p>
-                            <p class="card-text"> € ${prezzo}</p>
-                            <a href="#" class="btn btn-success">Aggiungi alla tua lista</a>
+                            <p class="card-text fw-bold fs-4"> € ${prezzo}</p>
+                            <a href="#" class="btn btn-success">Aggiungi ai preferiti</a>
+                            <a href="#" class="btn btn-success ms-3"><i class="fa-solid fa-bag-shopping fs-5 justify-content-center" id="cart"></i></a>
                         </div>
                     </div>
                 </div>`
