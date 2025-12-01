@@ -11,6 +11,7 @@
 </head>
 <body>
     <header>
+        <!--navbar-->
         <nav class="navbar bg-body-tertiary">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
@@ -27,9 +28,37 @@
                         <i class="fa-solid fa-bag-shopping fs-4 pe-5 starbucks-color carrello" role="button" id="cart"></i>
                         <span class="position-absolute top-0 start-0 translate-middle badge border border-light rounded-circle bg-danger p-2 d-none" id="cart-label">0</span>
                     </div> 
-                    
-                    
-                    <button class="btn btn-success me-3" id="login">Login</button>
+                    <!--bottone di login modale-->
+                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                        data-bs-whatever="@mdo">Login</button>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Accedi all'area riservata</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form> <!--form del modale-->
+                                        <div class="mb-3">
+                                            <label for="recipient-name" class="col-form-label">Inserisci la tua e-mail</label>
+                                            <input type="email" class="form-control" id="recipient-name">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="exampleInputPassword1" class="form-label">Inserisci la tua password</label>
+                                            <input type="password" class="form-control" id="exampleInputPassword1">
+                                        </div>
+                                    </form>
+                                    <p>Non sei registrato?  <a href="">Registrati qui</a></p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Indietro</button>
+                                    <button type="button" class="btn btn-success">Accedi</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </nav>
