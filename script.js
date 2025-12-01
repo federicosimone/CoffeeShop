@@ -59,7 +59,7 @@
         let prezzo = element.prezzo.toFixed(2) ;
         let descrizione = element.descrizione ;
 
-        const card = `<div class="col-12 col-md-6 col-lg-4 d-flex">
+        const card = `<div class="col-12 col-md-6 col-lg-4 d-flex ">
                     <div class="card align-content-stretch">
                         <img src="${img}" class="card-img-top img-fluid">
                         <div class="card-body">
